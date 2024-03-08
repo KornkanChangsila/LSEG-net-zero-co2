@@ -14,9 +14,10 @@ st.set_page_config(page_title='Net Zero Carbon Portfolio',
                    layout='wide')
 
 st.title('Net-Zero Carbon Portfolio🌍🌱')
+
 st.write('🏜️ Climate change poses risks to financial portfolios through physical and transition impacts. Extreme weather events and policy changes can harm assets and industries, affecting returns. To manage these risks and align with global climate goals, investors need to allocate capital toward companies and projects working towards net-zero emissions. This strategy not only reduces exposure to climate risks but also capitalizes on opportunities in sustainable sectors, ensuring long-term resilience and financial performance.')
+st.image('./data/Screenshot 2024-03-08 170343.png')
 st.write('🎯 In applying net-zero alignment to the portfolio, we focus on constructing a portfolio that targets carbon budget reduction while minimizing tracking error risk. To achieve this, we invest in **Thai stocks** of companies that are actively reducing their carbon footprint and transitioning towards a low-carbon economy.')
-st.write('[Image]')
 st.write('Note: This project will be completed on 26 Mar 2024. Some results are currently being simulated for illustrative purposes only.')
 
 st.markdown("""---""")
@@ -149,11 +150,14 @@ fig_weight.update_layout(
 st.plotly_chart(fig_weight, use_container_width=True)
 
 # Hide Streamlit Style
-# hide_st_style = """
-#             <style>
-#             #MainMenu {visibility: hidden;}
-#             footer {visibility: hidden;}
-#             header {visibility: hidden;}
-#             </style>
-#             """
-# st.markdown(hide_st_style, unsafe_allow_html=True)
+hide_st_style = """
+             <style>
+             #MainMenu {visibility: hidden;}
+             footer {visibility: hidden;}
+             header {visibility: hidden;}
+             </style>
+             """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+st.markdown("""---""")
+st.write('This project is the work of the **BossF Team** in The Quest for Sustainable Alpha hackaton by QuantCorner x LSEG')
