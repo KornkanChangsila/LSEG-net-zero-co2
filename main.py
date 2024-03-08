@@ -159,5 +159,6 @@ hide_st_style = """
              """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+
 st.markdown("""---""")
 st.write('This project is the work of the **BossF Team** in The Quest for Sustainable Alpha hackaton by QuantCorner x LSEG')
