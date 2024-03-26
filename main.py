@@ -86,7 +86,7 @@ fig_temp = px.line(
     df_temp,
     x='year',
     y=['Benchmark', 'CI-GMBCTS', 'CI-GMBE', 'NE-GMBCTS'],
-    title="<b>Reduce Temperature</b>",
+    title="<b>Implied Temperature Rise</b>",
     template="plotly_white",
     color_discrete_map={
         "Benchmark": color_benchmark,  
